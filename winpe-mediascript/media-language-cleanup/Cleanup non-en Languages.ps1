@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Removes non-English US language folders from WinPE boot media to reduce size.
+    Removes non-English language folders from WinPE boot media to reduce size.
 
 .DESCRIPTION
     This script removes all language folders except for en-us from the WinPE boot media
@@ -9,7 +9,7 @@
     directories.
 
 .NOTES
-    File Name      : Media Cleanup for en-US.ps1
+    File Name      : Media Cleanup for en.ps1
     Author         : OSDWorkspace
     Prerequisite   : PowerShell 5.1 or PowerShell 7
     Version        : 1.0
@@ -25,7 +25,6 @@ $Languages = @(
     'da-dk'
     'de-de'
     'el-gr'
-    'en-gb'
     'es-es'
     'es-mx'
     'et-ee'
