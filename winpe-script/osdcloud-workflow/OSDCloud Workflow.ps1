@@ -30,7 +30,7 @@ $ModuleNames | ForEach-Object {
 # Startnet.cmd
 $Content = @'
 @echo off
-title OSDCloud Pilot WinPE Startup
+title OSDCloud WinPE Startup 25.9.21.1
 wpeinit
 wpeutil DisableFirewall
 wpeutil UpdateBootInfo
