@@ -23,14 +23,14 @@ $ModuleNames | ForEach-Object {
 	$ModuleName = $_
 	Write-Host -ForegroundColor DarkGray "[$(Get-Date -format G)] [$($MyInvocation.MyCommand.Source)] Copy PowerShell Module to BootImage: $ModuleName"
 	Copy-PSModuleToWindowsImage -Name $ModuleName -Path $MountPath | Out-Null
-	# As an alternative, you can use the following command to get the latest from PowerShell Gallery:
-	# Save-Module -Name $ModuleName -Path "$MountPath\Program Files\WindowsPowerShell\Modules" -Force
+# As an alternative, you can use the following command to get the latest from PowerShell Gallery:
+# Save-Module -Name $ModuleName -Path "$MountPath\Program Files\WindowsPowerShell\Modules" -Force
 }
 #=================================================
 # Startnet.cmd
 $Content = @'
 @echo off
-title OSDCloud WinPE Startup 25.9.21.1
+title OSDCloud WinPE Startup 25.9.24.1
 wpeinit
 wpeutil DisableFirewall
 wpeutil UpdateBootInfo
