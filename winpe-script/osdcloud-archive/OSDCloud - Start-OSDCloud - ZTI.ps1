@@ -12,7 +12,7 @@ $StartnetCMD = @"
 @ECHO OFF
 wpeinit
 cd\
-title OSDFramework $OSDVersion Start-OSDCloud ZTI
+title OSD $OSDVersion Start-OSDCloud ZTI
 PowerShell -Nol -C Initialize-OSDCloudStartnet
 PowerShell -Nol -C Initialize-OSDCloudStartnetUpdate
 @ECHO OFF

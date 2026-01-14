@@ -12,7 +12,7 @@ $StartnetCMD = @"
 @ECHO OFF
 wpeinit
 cd\
-title OSDFramework $OSDVersion Start-OSDCloud Windows 11 24H2 Pro
+title OSD $OSDVersion Start-OSDCloud Windows 11 24H2 Pro
 PowerShell -Nol -C Initialize-OSDCloudStartnet
 PowerShell -Nol -C Initialize-OSDCloudStartnetUpdate
 @ECHO OFF
